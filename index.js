@@ -1,10 +1,10 @@
 import express, { json, urlencoded } from "express";
 import dotenv from "dotenv";
-import cors from 'cors'
+import cors from "cors";
 import storeRouter from "./routers/store.js";
 import authRouter from "./routers/auth.js";
 
-if (process.env.NODE_ENV !== "production") dotenv.config();
+// if (process.env.NODE_ENV !== "production") dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 5000;
